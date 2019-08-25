@@ -6,13 +6,14 @@ body {
 }
 
 body.night{
+
     background: #000000;
 }
 
 .toggle{
     position: absolute;
-    top: 20px;
-    left: 220px;
+    top: 75px;
+    left: 10px;
     background: #fff;
     border: 2px solid #00151f;
     width: 45px;
@@ -78,11 +79,20 @@ body.night{
 }
 
 /*NAVBAR SETTINGS*/
+
+.navbar-brand, 
 .nav-link {
-    color: #000;
+    color:#000;
+    margin: 0 auto;
+    display: table;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
 }
 
-.navbar-brand {
+.nav-link:hover,
+.navbar-brand:hover{
+    font-weight: bold;
     color:#000;
 }
 
@@ -96,6 +106,7 @@ body.night{
 
 /*MENU BAR ICON*/
 .navbar-toggler:focus, .navbar-toggler:active {
+    padding: 0;
     outline: none;
     box-shadow: none;
 }
@@ -126,23 +137,21 @@ body.night{
 
 
 /*DARK MODE*/
-body.night .content h1,
+body.night .content h2,
 body.night .content p,
 body.night .content #name,
 body.night .nav-link,
-body.night .navbar-brand
-{
+body.night .navbar-brand,
+body.night .nav-link:hover{
     color: #fff;
 }
 
 body.night .bar1,
 body.night .bar2,
-body.night .bar3
-{
+body.night .bar3{
    background-color: #fff;
 }
 
 body.night .navbar{
-    background-color: #000;
-    
+    background-color: #000;   
 } 
