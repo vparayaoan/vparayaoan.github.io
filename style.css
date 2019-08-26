@@ -5,6 +5,7 @@ body {
     transition: 0.5s;
 }
 
+
 body.night{
 
     background: #000000;
@@ -55,9 +56,10 @@ body.night{
     padding: 0;
     color: #000;
     transition: 0.5s;
-    font-size: 35px;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 0.12em;
+    text-align: center;
 }
 
 
@@ -66,8 +68,14 @@ body.night{
     padding: 0;
     color: #000;
     transition: 0.5s;
-    font-size: 60px;
+    font-size: 50px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
+
+}
+
+.content header p{
+    font-size: 18px;
 }
 
 .content p{
@@ -75,7 +83,7 @@ body.night{
     padding: 0;
     color: #000;
     transition: 0.5s;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /*NAVBAR SETTINGS*/
@@ -103,6 +111,15 @@ body.night{
     border-top: 1px solid black;*/
 }
 
+/*Smooth-Scrolling-no blocking header*/
+#about::before,
+#projects::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
+}
 
 /*MENU BAR ICON*/
 .navbar-toggler:focus, .navbar-toggler:active {
@@ -155,3 +172,4 @@ body.night .bar3{
 body.night .navbar{
     background-color: #000;   
 } 
+
