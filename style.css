@@ -3,7 +3,6 @@ body {
     transition: 0.5s;
 }
 
-
 body.night{
     background: #000000;
 }
@@ -160,9 +159,8 @@ img{
 }
 
 .btn-outline-info{
-    width:100px;
+    width:180px;
 }
-
 
 .intro h2{
     font-size: 40px;
@@ -177,7 +175,8 @@ body.night .content p,
 body.night .content #name,
 body.night .nav-link,
 body.night .navbar-brand,
-body.night .nav-link:hover{
+body.night .nav-link:hover,
+body.night li{
     color: #fff;
 }
 
