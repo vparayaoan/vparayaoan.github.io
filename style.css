@@ -5,7 +5,7 @@ body {
 
 
 body.night{
-  background: #000000;
+    background: #000000;
 }
 
 .toggle{
@@ -153,6 +153,11 @@ body.night{
 }
 
 
+img{ 
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%
+}
 
 /*DARK MODE*/
 body.night .content h2,
@@ -171,15 +176,15 @@ body.night .bar3{
 }
 
 body.night .navbar{
-    background-color: #000;   
+    background-color: #000;
 } 
-
-
-/*body.night img{
-    filter:invert(100%);
-    transition: 0.5s;
-}*/
 
 body.night .content header p{
     color: #56E9F2;
+}
+
+
+body.night img{
+    filter:invert(100%);
+    transition: 0.5s;
 }
