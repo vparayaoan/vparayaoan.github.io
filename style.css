@@ -63,13 +63,14 @@ body.night{
     padding: 0;
     color: #000;
     transition: 0.5s;
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
 }
 
 .content header p{
     font-size: 18px;
+    color:#F83232
 }
 
 .content p{
@@ -152,12 +153,23 @@ body.night{
     border:2px solid #A4E9F6;
 }
 
-
 img{ 
     display: flex; 
     flex-wrap: wrap;
     width: 100%
 }
+
+.btn-outline-info{
+    width:100px;
+}
+
+
+.intro h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
 
 /*DARK MODE*/
 body.night .content h2,
@@ -188,3 +200,4 @@ body.night img{
     filter:invert(100%);
     transition: 0.5s;
 }
+
