@@ -1,6 +1,11 @@
 body {
     font-family: Montserrat;
     transition: 0.5s;
+    background-color:#FDF7F2; 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body.night{
@@ -11,7 +16,7 @@ body.night{
     position: absolute;
     top: 50px;
     left: 15px;
-    background: #fff;
+    background: #FDF7F2;
     border: 2px solid #00151f;
     width: 45px;
     height: 20px;
@@ -21,7 +26,7 @@ body.night{
 }
 
 .toggle.active{
-    background: #0000;
+    background: #FDF7F2;
     border: 2px solid #fff;
 }
 
@@ -39,7 +44,7 @@ body.night{
 
 .toggle.active:before{
     left:25px;
-    background: #fff;
+    background: #FDF7F2;
 }
 
 .content{
@@ -49,7 +54,7 @@ body.night{
 .content h2{
     margin: 0 0 20px;
     padding: 0;
-    color: #000;
+    color: #F36161;
     transition: 0.5s;
     font-size: 30px;
     text-transform: uppercase;
@@ -58,7 +63,7 @@ body.night{
 
 
 .content #name {
-    margin: 0 0 20px;
+    margin: 50px 0 20px;
     padding: 0;
     color: #000;
     transition: 0.5s;
@@ -69,7 +74,7 @@ body.night{
 
 .content header p{
     font-size: 18px;
-    color:#F83232
+    color:#F36161;
 }
 
 .content p{
@@ -77,11 +82,15 @@ body.night{
     padding: 0;
     color: #000;
     transition: 0.5s;
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 0.05em;
 }
 
-.content li{
-    font-size: 14px;
+.content h6{
+    font-weight:bold;
+    font-size:16px;
+    letter-spacing: 0.10em;
+    transition: 0.4s;
 }
 
 /*NAVBAR SETTINGS*/
@@ -103,10 +112,8 @@ body.night{
 }
 
 .navbar{
-    background-color:#fff;
+    background-color:#FDF7F2;
     transition: 0.5s;
-    /*border-bottom: 1px solid black;
-    border-top: 1px solid black;*/
 }
 
 /*Smooth-Scrolling-no blocking header*/
@@ -141,13 +148,13 @@ body.night{
 }
 
 .change .bar1 {
-    transform:  translate(0, 10px);
+    transform:translate(0, 10px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    transform:  translate(0, -10px);
+    transform:translate(0, -10px);
 }
 
 
@@ -162,19 +169,21 @@ img{
     width: 100%
 }
 
-.btn-outline-info{
+
+/*LINKED BUTTONS*/
+.btn-default{
+    border-color:#FF9494;
+    color:#000;
     width:180px;
 }
 
-.intro h2{
-    font-size: 40px;
-    font-weight: bold;
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color:#FF9494;
 }
 
 
-
 /*DARK MODE*/
-body.night .content h2,
+body.night .content h6,
 body.night .content p,
 body.night .content #name,
 body.night .nav-link,
@@ -190,16 +199,26 @@ body.night .bar3{
    background-color: #fff;
 }
 
-body.night .navbar{
+body.night .navbar,
+body.night .toggle{
     background-color: #000;
 } 
 
-body.night .content header p{
+body.night .content header p,
+body.night .content h2{
     color: #56E9F2;
 }
-
 
 body.night img{
     filter:invert(100%);
     transition: 0.5s;
+}
+
+body.night .btn-default{
+    border-color:#56E9F2;
+    color:#FFF;
+}
+
+body.night .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    color:#56E9F2;
 }
