@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
- 
+
     <script type="text/javascript" src="index.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>Vanessa Parayaoan</title>
 
@@ -20,54 +24,68 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md fixed-top ">
-        
-        <a class="navbar-brand" href="index.html">Vanessa Parayaoan</a>
-        
+    <nav class="navbar navbar-expand-md fixed-top">
+
+        <a class="navbar-brand" href="#">Vanessa Parayaoan</a>
+
         <!-- Dark Mode Switch(Toggle) -->
-        <div class="toggle"></div> 
+        <div class="toggle"></div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    
-        <!-- Menu Bar Icon -->
-        <div class="container menuIcon" onclick="condenseIcon(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                <i class="fa fa-bars"></i>
+            </span>
         </button>
-        
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">Resume</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
             </ul>
-         </div>
+        </div>
     </nav>
 
     <div class="content">
-        <header class="text-center pt-4">
+        <section class="text-center pt-4">
             <h1 id="name">Vanessa Parayaoan</h1>
+
             <p>A Biomedical & Electrical Engineering Student</p>
-        </header>
+            <div class="social-media-icons">
+                <br>
+
+                <a href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/" target="_blank">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://github.com/vparayaoan" target="_blank">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a href="mailto:parayaoanvanessa@gmail.com" target="_blank">
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                </a>
+            </div>
+
+        </section>
         <br>
         <br>
 
         <div>
             <img id="network" src="Images/LightNetwork.svg">
         </div>
-        
+
         <div id="about" class="container text-center p-5">
             <h2 class="intro">Hello, I’m Vanessa!</h2>
             <p> A fourth year Biomedical & Electrical Engineering student at Carleton University.</p>
@@ -75,27 +93,35 @@
 
         <br>
 
-        <div id="projects" class="container p-5 border">
+        <div id="projects" class="container p-4 border">
             <h2 class="text-center">Projects</h2>
-                <div class="d-sm-flex flex-column">
+            <div class="d-sm-flex flex-column">
                 <div class="p-5">
-                    <h6>Myocardial Perfusion Abnormality Classification</h6>
-                    <p>University of Ottawa Heart Institute, Ottawa, ON</p>    
-                    <br>    
-                    <p> Developed an image classification model that classifies the abnormality of a Cardiac Image in Python using Keras/Tensorflow libraries for Supervised Learning</p>
+                    <h6>Myocardial Perfusion and Wall Motion Abnormality Classification</h6>
+                    <p>University of Ottawa Heart Institute, Ottawa, ON</p>
+                    <p>June 2018 - Present</p>
+                    <br>
+                    <p>| Python | Tensorflow | Machine Learning |</p>
+                    <br>
+                    <p> Currently developing an image classification model that classifies the abnormality of a Cardiac
+                        Image in Python using Keras and Tensorflow libraries for Supervised Learning</p>
                     <br>
                     <br>
-               
+
                     <h6>The Effect of Sex on Two-Point Discrimination</h6>
                     <p>Carleton University, Ottawa, ON</p>
                     <br>
-                    <p>Collaborated with a team of engineering students to conduct a research project studying tactile perception between males and females as part of the 2019 Ethics, Research Methods, and Standards for Biomedical Engineers (ERMSBE) Conference</p>
-                    <br>    
-                    <a class="btn btn-default" id="projectButton"href="Project Files/The Effect of Sex on Two-Point Discrimination Research Paper.pdf" role="button" target="_blank">Research Paper</a>
-                    </div>
+                    <p>Collaborated with a team of engineering students to conduct a research project studying tactile
+                        perception differences between males and females as part of the 2019 Ethics, Research Methods,
+                        and Standards for Biomedical Engineers (ERMSBE) Conference</p>
+                    <br>
+                    <a class="btn btn-default" id="projectButton"
+                        href="Project Files/The Effect of Sex on Two-Point Discrimination Research Paper.pdf"
+                        role="button" target="_blank">Research Paper</a>
+                </div>
             </div>
         </div>
-        
+
         <br>
 
         <!-- Dark Immigo Prototype Figma-->
@@ -109,41 +135,50 @@
 
         <div id="contact" class="container p-5 border">
             <h2>Contact</h2>
-            <div class="d-sm-flex flex-column align-items-center">
-                <div class="p-2">
-                    
-                    <a class="btn btn-default" href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/" role="button" target="_blank">
-                    LinkedIn</a>
-                
-                </div>
-                <div class="p-2">  
-                    <a class="btn btn-default" href="https://github.com/vparayaoan" role="button" target="_blank">Github</a>
-                </div>
-                <div class="p-2">
-                    <a class="btn btn-default" href="mailto:parayaoanvanessa@gmail.com" role="button" target="_blank">Email</a>
-                  <p></p>
-                </div>
+
+            <div class="social-media-icons">
+
+                <a href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/">
+                    <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a href="https://github.com/vparayaoan" target="_blank">
+                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
+
+                <a href="mailto:parayaoanvanessa@gmail.com" target="_blank">
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                </a>
             </div>
+            <br>
+            <p>Let's Connect!</p>
+
         </div>
-</div>
+    </div>
 
 
-<!-- MOVE TO SEPARATE FILE -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.toggle').click(function(){
-            $('.toggle').toggleClass('active')
-            $('body').toggleClass('night')
+    <!-- MOVE TO SEPARATE FILE -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('.toggle').toggleClass('active')
+                $('body').toggleClass('night')
+            })
         })
-    })
-</script>
+    </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

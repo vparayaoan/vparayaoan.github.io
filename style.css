@@ -1,7 +1,7 @@
 body {
     font-family: Montserrat;
     transition: 0.5s;
-    background-color:#FDF7F2; 
+    background-color:srgb(255, 255, 255); 
 }
 
 html{
@@ -16,7 +16,7 @@ body.night{
     position: absolute;
     top: 50px;
     left: 15px;
-    background: #FDF7F2;
+    background: rgb(255, 255, 255);
     border: 2px solid #00151f;
     width: 45px;
     height: 20px;
@@ -61,7 +61,6 @@ body.night{
     letter-spacing: 0.12em;
 }
 
-
 .content #name {
     margin: 50px 0 20px;
     padding: 0;
@@ -72,7 +71,7 @@ body.night{
     text-transform: uppercase;
 }
 
-.content header p{
+.content section p{
     font-size: 18px;
     color:#F36161;
 }
@@ -90,7 +89,7 @@ body.night{
     font-weight:bold;
     font-size:16px;
     letter-spacing: 0.10em;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 /*NAVBAR SETTINGS*/
@@ -98,7 +97,6 @@ body.night{
 .navbar-brand, 
 .nav-link {
     color:#000;
-    margin: 0 auto;
     display: table;
     font-size: 15px;
     text-transform: uppercase;
@@ -111,8 +109,21 @@ body.night{
     color:#000;
 }
 
+
+.navbar-toggler {
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.40;
+    background-color:transparent;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline:none;
+    box-shadow:none;
+}
+
 .navbar{
-    background-color:#FDF7F2;
+    background-color:rgb(255, 255, 255);
     transition: 0.5s;
 }
 
@@ -126,49 +137,28 @@ body.night{
   visibility: hidden;
 }
 
-/*MENU BAR ICON*/
-.navbar-toggler:focus, .navbar-toggler:active {
-    padding: 0;
-    outline: none;
-    box-shadow: none;
-}
-
-
-/*MENU BAR ICON ANIMATION*/
-.container .menuIcon {
-  display: inline-block;
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #000;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-    transform:translate(0, 10px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    transform:translate(0, -10px);
-}
-
-
 #contact{
     text-align: center;
-    border:2px solid #A4E9F6;
 }
 
 img{ 
     display: flex; 
     flex-wrap: wrap;
-    width: 100%
+    width: 100%;
+    transition:0.5s;
 }
 
+/*SOCIAL MEDIA ICONS*/
+.social-media-icons a{
+    color:#000;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.content {
+    align-content: left;
+    padding: 10px;
+}
 
 /*LINKED BUTTONS*/
 .btn-default{
@@ -181,7 +171,6 @@ img{
     color:#FF9494;
 }
 
-
 /*DARK MODE*/
 body.night .content h6,
 body.night .content p,
@@ -193,10 +182,10 @@ body.night li{
     color: #fff;
 }
 
-body.night .bar1,
-body.night .bar2,
-body.night .bar3{
-   background-color: #fff;
+body.night .navbar-toggler{
+    transition: 0.5s;
+    background-color:black;
+    color:white;
 }
 
 body.night .navbar,
@@ -204,7 +193,7 @@ body.night .toggle{
     background-color: #000;
 } 
 
-body.night .content header p,
+body.night .content section p,
 body.night .content h2{
     color: #56E9F2;
 }
@@ -222,3 +211,10 @@ body.night .btn-default{
 body.night .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
     color:#56E9F2;
 }
+
+body.night .social-media-icons a{
+    color:#FFF;
+    transition:0.5s;
+}
+
+
