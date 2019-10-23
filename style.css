@@ -118,9 +118,12 @@ h3{
     letter-spacing: 0.12em;
 }
 
-#about{
-    padding: 220px 45px;
-     background-color: #ffe8e8;
+#network{
+    padding:200px 45px; 
+    background-image: url("Images/LightNetwork.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
 }
 
 #name {
@@ -130,6 +133,23 @@ h3{
     font-size: 50px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+}
+
+#about{
+    padding: 220px 45px;
+    /* background-color: #ffe8e8; */
+    background-image:url("Images/Vector.png");
+}
+
+#projects{
+    margin:150px 50px;
+}
+
+#contact{
+    padding:100px 0;
+    text-align: center;
+    background-color: #ffe8e8;
+    transition:0.5s;
 }
 
 p{
@@ -147,19 +167,6 @@ h6{
     letter-spacing: 0.10em;
     transition: 0.5s;
     color: rgb(247, 83, 83);
-}
-
- #contact{
-    padding:100px 0;
-    text-align: center;
-    background-color: #ffe8e8;
-}
-
-img{ 
-    display: flex; 
-    flex-wrap: wrap;
-    width: 100%;
-    transition:0.5s;
 }
 
 .btn {
@@ -186,15 +193,20 @@ img{
 }
 
 /*SOCIAL MEDIA ICONS*/
-.social-media-icons a{
-    color:#000;
+.social-media-icons a {
+    color:rgb(0, 0, 0);
     margin: 10px;
     transition: 0.5s;
+}
+
+a:hover{
+    color: rgb(255, 146, 131);
 }
 
 /*DARK MODE*/
 body.night{
     background:#000;
+    transition: 0.5s;
  }
 
 body.night p,
@@ -217,15 +229,14 @@ body.night .toggle{
     background-color: #000;
 } 
 
-body.night h6,
-body.night h2,
-body.night h3{
-    color: #56E9F2;
-}
-
-body.night img{
+body.night #network{
     filter:invert(100%);
     transition: 0.5s;
+}
+
+body.night #contact{
+    background-color: black;
+    transition:0.5s;
 }
 
 body.night .btn-default{
@@ -242,15 +253,18 @@ body.night .social-media-icons a{
     transition:0.5s;
 }
 
+body.night h6,
+body.night h2,
+body.night h3,
+body.night a:hover{
+    color: #56E9F2;
+}
+
 body.night .btn-grad{
     background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
     transition:0.5s;
 }
 
-body.night #contact,
-body.night #about{
-    background-color:rgb(0, 0, 0) ;
-}
 
 body.night .btn:hover{
     color:rgb(73, 73, 190);
@@ -269,4 +283,9 @@ body.night .btn:hover{
         text-align: center;
     }
 
+    #about p{
+        text-align: center;
+    }
+
 }
+ 
