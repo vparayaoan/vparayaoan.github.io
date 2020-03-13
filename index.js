@@ -5,3 +5,7 @@ $(document).ready(function () {
         $('body').toggleClass('night')
     })
 })
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})

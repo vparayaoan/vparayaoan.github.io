@@ -43,7 +43,7 @@ html{
 .nav-link:hover,
 .navbar-brand:hover{
     font-weight: bold;
-    color:rgb(230, 126, 126);
+    color:rgb(131, 101, 243);
 }
 
 .navbar-collapse{
@@ -65,7 +65,7 @@ html{
 
 .toggle{
     position: absolute;
-    top: 20px;
+    top: 16px;
     right: 15px;
     background: rgb(255, 255, 255);
     border: 2px solid #00151f;
@@ -118,37 +118,34 @@ h3{
     letter-spacing: 0.12em;
 }
 
-#network{
-    padding:200px 45px; 
-    background-image: url("Images/LightNetwork.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.5s;
-}
-
-#name {
+#name{
     margin: 100px 0 20px;
     color: rgb(0, 0, 0);
     transition: 0.5s;
     font-size: 50px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
+    font-family: Oswald;
 }
 
 #about{
-    padding: 220px 45px;
-    /* background-color: #ffe8e8; */
-    background-image:url("Images/Vector.png");
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
 }
 
-#projects{
-    margin:150px 50px;
+#projects {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 #contact{
     padding:100px 0;
     text-align: center;
-    background-color: #ffe8e8;
+    background-color: white;
     transition:0.5s;
 }
 
@@ -168,28 +165,25 @@ h6{
     transition: 0.5s;
     color: rgb(247, 83, 83);
 }
+  
+.btn-link:hover {
+    width:190px;
+    text-decoration: none;
+    color: white;
+}
 
-.btn {
+.btn-link {
     width:180px;
-    margin: auto;
-    padding: 12px;
+    padding: 8px;
+    display: block;
+    margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
+    color: white;
+    border-radius: 8px;
     transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    transition: 0.5s;
-}
-  
-.btn:hover {
-    background-position: right center; 
-    color:#f85151;
-}
-
-.btn-grad {
-    background-image: linear-gradient(to right, #ffb5b5 0%, #fdd0d0 51%,#ffb5b5   100%);
-    transition:0.5s;
+    background-color: rgb(113, 65, 192);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
 }
 
 /*SOCIAL MEDIA ICONS*/
@@ -200,7 +194,116 @@ h6{
 }
 
 a:hover{
-    color: rgb(255, 146, 131);
+    color: rgb(131, 101, 243);
+    text-decoration: none;
+}
+
+/*PROJECTS*/
+
+.mouse-card{
+    background-color:#d37014;
+}
+
+.heart-card{
+    background-color: #b83b1c;
+}
+
+.emg-card{
+    background-color:#77A1D3;
+}
+
+.two-card{
+    background-color: rgb(131, 101, 243);
+}
+
+.web-card{
+    background-color: rgb(128, 199, 144);
+}
+.card{
+    height: 600px;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
+
+}
+.card .view-proj {
+    opacity: 0%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    top: 22px;
+    right: 52px;
+    position: absolute;
+}
+
+.card .more {
+    background-image: url("Images/right-arrow.svg");
+    filter:invert(100%);
+    opacity:90%;
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.card .more:hover ~ span {
+    opacity: 0.8;
+  }
+
+.card .more:hover  {
+    background-size: 32px;
+    transition: 0.5s;
+}
+
+.card .text .proj-title{
+    font-size: 20px;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Dosis';
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+    padding-top: 70px;
+}
+
+.card .text .proj-skills{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgb(224, 224, 224);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.card .text .proj-info{
+    text-align: center;
+    padding: 30px 32px;
+    color:white;
+    line-height: 30px;
+}
+
+.card .text .mouse-gif{
+    display: block;
+    margin: 0 auto;
+    background-size: 28px;
+    height: 340px;
+    padding: 30px 30px;
+}
+
+.card .text .pet-scan{
+    display: block;
+    margin: 0 auto;
+    background-size: 28px;
+    height: 220px;
+    padding: 10px 10px;
 }
 
 /*DARK MODE*/
@@ -228,11 +331,6 @@ body.night .navbar,
 body.night .toggle{
     background-color: #000;
 } 
-
-body.night #network{
-    filter:invert(100%);
-    transition: 0.5s;
-}
 
 body.night #contact{
     background-color: black;
@@ -265,10 +363,10 @@ body.night .btn-grad{
     transition:0.5s;
 }
 
-
 body.night .btn:hover{
     color:rgb(73, 73, 190);
 }
+
 
 /* Appearance on smaller screens */
 @media (max-width : 768px) {
@@ -286,6 +384,5 @@ body.night .btn:hover{
     #about p{
         text-align: center;
     }
-
 }
- 
+

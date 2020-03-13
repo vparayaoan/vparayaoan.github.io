@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Oswald&display=swap" rel="stylesheet">
 
+    <link href="animate.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -46,9 +48,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>  -->
             </ul>
         </div>
     </nav>
@@ -77,12 +76,6 @@
 
     <br>
     <br>
-    <section id="network">
-        <div>
-            <!-- <img id="network" src="Images/LightNetwork.svg"> -->
-        </div>
-    </section>
-    <br>
 
     <section id="about">
         <div class="container">
@@ -98,75 +91,126 @@
     </section>
 
     <section id="projects">
-        <h2 class="text-center">Projects</h2>
-        <div class="text-center d-sm-flex flex-column">
-            <h6>Myocardial Perfusion and Wall Motion Abnormality Classification</h6>
-            <p>University of Ottawa Heart Institute, Ottawa, ON</p>
-            <p>June 2018 - Present</p>
-            <br>
-            <p> Currently developing an image classification model that detects the location of cardiac abnormality
-                within the segments of a patient's heart using Python and Tensorflow/Keras libraries for Deep Learning
-                Convolutional Neural Network Architectures</p>
-            <br>
-            to detect the location of cardiac abnormality in a patient
-            <br>
+        <div class="project-div">
+            <hr>
+            <div class="row ">
+                <div class="col-md-6">
+                    <a href="index.html" class="card-container">
+                        <div class="mouse-card card animated fadeInLeft">
+                            <div class="more"></div>
+                            <span class="view-proj">view project</span>
+                            <div class="text">
+                                <div class="proj-title">
+                                    Video Analysis of Mouse Movements for Neuroscience
+                                </div>
+                                <div class="proj-skills">Python - OpenCV - Computer Vision</div>
+                                <img class="mouse-gif" src="Images/mouseMask.gif">
+                            </div>
 
-            <h6>The Effect of Sex on Two-Point Discrimination</h6>
-            <p>Carleton University, Ottawa, ON</p>
-            <p>January-April 2019</p>
-            <br>
-            <p>Collaborated with a team of engineering students to conduct a research project studying tactile
-                perception differences between males and females as part of the 2019 Ethics, Research Methods,
-                and Standards for Biomedical Engineers (ERMSBE) Conference</p>
-            <br>
-            <a class="btn btn-grad"
-                href="Project Files/The Effect of Sex on Two-Point Discrimination Research Paper.pdf" role="button"
-                target="_blank">Research Paper</a>
-            <br>
-            <br>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="index.html" class="card-container">
+                        <div class="heart-card card animated fadeInRight">
+                            <div class="more"></div>
+                            <span class="view-proj">view project</span>
+                            <div class="text">
+                                <div class="proj-title">
+                                    Myocardial Perfusion and Wall Motion Abnormality Classification
+                                </div>
+                                <div class="proj-skills">Python - TensorFlow/Keras - CNNs</div>
+                                <img class="pet-scan" src="Images/pet.jpg">
+                                <p class="proj-info">
+                                    Currently assisting in the development of a Deep Learning model at the University of
+                                    Ottawa Heart
+                                    Institute which can detect the location of cardiac
+                                    abnormality within the segments of a patient's heart.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
 
-            <h6>FPGA Based Stopwatch</h6>
-            <p>Carleton University, Ottawa, ON</p>
-            <p>January - April 2019</p>
-            <br>
+                </div>
+            </div>
 
-            <p>
-                <ul class="text-left">
-                    <li>Programmed Verilog HDL scripts in Xilinx Vivado to design a FPGA based dual mode stopwatch
-                        controlled to count up or down from a pre-set time</li>
-                    <li>Enhanced overall functionality of the design by incorporating an animated graphical output onto
-                        a computer monitor using the VGA interface and programmed Verilog HDL scripts</li>
-                    <li>Produced test benches to incrementally test and ensure features of the digital circuit met
-                        essential project specifications</li>
-                </ul>
-            </p>
+            <hr>
 
-            <br>
-            <h6>EMG-Controlled Computer Mouse</h6>
-            <p>Carleton University, Ottawa, ON</p>
-            <p>September - December 2018</p>
-            <br>
-            <p>
-                <ul class="text-left">
-                    <li>Collaborated with a team of engineering students to design an electromyogram (EMG)
-                        signal-controlled circuit that operates into an active mouse click</li>
-                    <li> Incrementally built and tested the circuit under the supervision of a senior electronics
-                        engineer to incorporate suitable signal amplification, rectification, integration, and user
-                        protection using appropriate electrical hardware components (resistors, diodes, transistors,
-                        etc.) </li>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html" class="card-container">
+                        <div class="emg-card card animated fadeInUp">
+                            <div class="more"></div>
+                            <span class="view-proj">view project</span>
+                            <div class="text">
+                                <div class="proj-title">
+                                    EMG-Controlled Computer Mouse
+                                </div>
+                                <p class="proj-info">Collaborated with a team of engineering students to design an
+                                    electromyogram (EMG) signal-controlled circuit that operates into an active mouse
+                                    click
+                                </p>
+                            </div>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html" class="card-container">
+                        <div class="two-card card animated fadeInUp">
+                            <div class="more"></div>
+                            <span class="view-proj">view project</span>
+                            <div class="text">
+                                <div class="proj-title">
+                                    The Effect of Sex on Two-Point Discrimination
+                                </div>
+                                <div class="proj-skills"></div>
+                                <a class="btn-link"
+                                    href="Project Files/The Effect of Sex on Two-Point Discrimination Research Paper.pdf"
+                                    role="button" target="_blank">Research Paper</a>
+                                <p class="proj-info"> Collaborated with a team of engineering students to conduct a
+                                    research project studying tactile perception differences between males and females
+                                    as part of
+                                    the 2019 Ethics, Research Methods, and Standards for Biomedical Engineers (ERMSBE)
+                                    Conference
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="index.html" class="card-container">
+                        <div class="web-card card animated fadeInUp">
+                            <div class="more"></div>
+                            <span class="view-proj">view project</span>
+                            <div class="text">
+                                <div class="proj-title">
+                                    vparayaoan.github.io
+                                </div>
+                                <div class="proj-skills">HTML - CSS - JavaScript</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
         </div>
     </section>
 
-    <br>
-
-    <!-- Dark Immigo Prototype Figma-->
-    <!-- <div style="border: 0px none; overflow: hidden; margin: 20px 0px; max-width: 800px;">
-            <iframe  class="immigoDark" scrolling="no" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPeUR8gh0Tk8A0RBAQqWcfk%2FImmigo%3Fnode-id%3D17%253A936%26viewport%3D828%252C285%252C0.6657246351242065%26scaling%3Dscale-down" allowfullscreen  style="border: 0px none; height: 500px;  width: 300px;">
-            </iframe>
-        </div>
-        </div> -->
-
-    <br>
+    <!-- Dark Immigo Prototype Figma
+    <div style="border: 0px none; overflow: hidden; margin: 20px 0px; max-width: 800px;">
+        <iframe class="immigoDark" scrolling="no"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPeUR8gh0Tk8A0RBAQqWcfk%2FImmigo%3Fnode-id%3D17%253A936%26viewport%3D828%252C285%252C0.6657246351242065%26scaling%3Dscale-down"
+            allowfullscreen style="border: 0px none; height: 500px;  width: 300px;">
+        </iframe>
+    </div> -->
 
     <section id="contact">
         <p>Let's Connect!</p>
