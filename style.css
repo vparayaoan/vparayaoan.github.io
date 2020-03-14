@@ -43,7 +43,7 @@ html{
 .nav-link:hover,
 .navbar-brand:hover{
     font-weight: bold;
-    color:rgb(131, 101, 243);
+    color:rgb(125, 71, 211);
 }
 
 .navbar-collapse{
@@ -182,7 +182,7 @@ h6{
     color: white;
     border-radius: 8px;
     transition: 0.5s;
-    background-color: rgb(113, 65, 192);
+    background-color: rgb(125, 71, 211);
     box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
 }
 
@@ -194,7 +194,7 @@ h6{
 }
 
 a:hover{
-    color: rgb(131, 101, 243);
+    color: rgb(125, 71, 211);
     text-decoration: none;
 }
 
@@ -256,6 +256,7 @@ a:hover{
 
 .card .more:hover ~ span {
     opacity: 0.8;
+    
   }
 
 .card .more:hover  {
