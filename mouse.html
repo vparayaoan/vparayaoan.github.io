@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,24 +9,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Oswald&display=swap" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
-    <link href="animate.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <!-- Custom styles for this template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>Vanessa Parayaoan</title>
+
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-md fixed-top">
 
         <a class="navbar-brand" href="index.html">Vanessa Parayaoan</a>
 
-        <!-- Dark Mode Switch(Toggle) -->
+        <!-- Dark Mode Toggle -->
         <div class="toggle"></div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
@@ -40,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto mt-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#about-me">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#projects">Projects</a>
@@ -52,31 +54,40 @@
         </div>
     </nav>
 
-    <section id="projects">
-        <div class="proj-page">
-            <br>
-            <br>
-            <div class="proj-title">Video Analysis of Mouse Movements</div>
-            <div class="proj-desc animated fadeInUp">
-                Currently working with a team of engineering students to develop an automated position tracker
-                tool for stress induced mice models in collaboration with Carleton University’s Neuroscience
-                Department
-            </div>
+    <h3 class="page-title">
+        Video Analysis of Mouse Movements for Neuroscience
+    </h3>
+    <div class="container">
+        <div class="row">
 
-            <div class="row">
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/mouseOriginal.gif">
-                </div>
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/mouseMask2.gif">
-                </div>
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/mouseArrow.gif">
-                </div>
-            </div>
-
+            <ul class="col-md-6">
+                <li> Working with a team of engineering students to develop an automated position tracker tool for
+                    videos of stress induced mice models in collaboration with Carleton University’s Neuroscience
+                    Department.
+                </li>
+                <br>
+                <li> Reduced researcher’s manual annotation and analysis time of experiment recordings by 70% while also
+                    generating additional graphical and visual outputs of position data for mice behaviour analysis
+                </li>
+            </ul>
+            <div class="col-md-6">
+                <img style="width:150px;" src="imgs/final-mouse.JPG"> </div>
         </div>
-    </section>
+
+
+        <div class="row">
+            <div class="col-md-4 animated fadeInUp">
+                <img class="trio" src="imgs/mouseOriginal.gif">
+            </div>
+            <div class="col-md-4 animated fadeInUp">
+                <img class="trio" src="imgs/mouseMask2.gif">
+            </div>
+            <div class="col-md-4 animated fadeInUp">
+                <img class="trio" src="imgs/mouseArrow.gif">
+            </div>
+        </div>
+
+    </div>
 
 
     <section id="contact">
@@ -100,16 +111,23 @@
         <br>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="text-center text-muted small">
+                Copyright &copy; Vanessa Parayaoan 2020. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="index.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>

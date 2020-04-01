@@ -106,16 +106,7 @@ html{
 }
 
 .underline{
-    text-decoration: underline #F4D7A2;
-}
-
-h3{
-    margin: 0 0 20px;
-    padding: 0;
-    color: rgb(0, 0, 0);
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-decoration: underline #F4D7A2 !important;
 }
 
 .about .container{
@@ -149,6 +140,12 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
+}
+
+.page-title{
+    padding: 10px 70px;
+    padding-top:150px;
+    font-weight: bold;
 }
 
 #contact{
@@ -260,19 +257,11 @@ a:hover{
     text-align: left;
 }
 
-.card .mouse-gif{
-    display: block;
-    margin: 0 auto;
-    background-size: 28px;
-    width: auto;
-    padding: 10px 10px;
-}
-
 .trio{
     display: block;
     margin: 0 auto;
-    height: 400px;
-    padding: 20px 20px;
+    height:auto;
+    padding:10px 10px;
 }
 
 .vga{
@@ -307,7 +296,7 @@ a:hover{
 
 /*DARK MODE*/
 body.night{
-    background:black;
+    background:rgb(35, 35, 43);
     transition: 0.5s;
  }
 
