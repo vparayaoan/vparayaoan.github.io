@@ -26,7 +26,7 @@ html{
 
 .navbar-brand, 
 .nav-link {
-    color:black;
+    color:rgb(0, 0, 0);
     font-size: 18px;
     font-weight:700;
     letter-spacing: 2px;
@@ -93,7 +93,7 @@ html{
     background-color: red;
 }
 .intro{
-    padding-top: 250px;
+    padding-top: 230px;
     padding-right:20px;
     padding-left:100px;
 }
@@ -112,7 +112,7 @@ html{
 .about .container{
     display: flex;
     padding:40px;
-    padding-top:200px;
+    padding-top:90px;
     padding-bottom: 200px;
     position: relative; 
 }
@@ -121,9 +121,6 @@ html{
     font-weight: bold;
     font-size: 30px;
     text-align: left;
-}
-.me-img{
-    padding-bottom: 20px;
 }
 
 .about-desc{
@@ -143,7 +140,6 @@ img {
 }
 
 .page-title{
-    padding: 10px 70px;
     padding-top:150px;
     font-weight: bold;
 }
@@ -261,7 +257,7 @@ a:hover{
     display: block;
     margin: 0 auto;
     height:auto;
-    padding:10px 10px;
+    padding:30px 10px;
 }
 
 .vga{
@@ -296,7 +292,7 @@ a:hover{
 
 /*DARK MODE*/
 body.night{
-    background:rgb(35, 35, 43);
+    background:#121212;
     transition: 0.5s;
  }
 
@@ -331,6 +327,7 @@ body.night .underline{
     text-decoration-color:#56E9F2;
 }
 
+
 /* Appearance on smaller screens */
 @media (max-width : 768px) {
 
@@ -349,5 +346,8 @@ body.night .underline{
         padding-left: 40px;
     }
 
+    
+    .about-desc{
+        text-align: left;
+    }
 }
-
