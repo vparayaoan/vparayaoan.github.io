@@ -56,8 +56,8 @@ html{
 
 .toggle{
     position: absolute;
-    top: 16px;
-    right: 15px;
+    top: 20px;
+    right: 16px;
     background: rgb(255, 255, 255);
     border: 2px solid #00151f;
     width: 45px;
@@ -89,9 +89,6 @@ html{
     background: #FDF7F2;
 }
 
-.color-me {
-    background-color: red;
-}
 .intro{
     padding-top: 230px;
     padding-right:20px;
@@ -112,7 +109,7 @@ html{
 .about .container{
     display: flex;
     padding:40px;
-    padding-top:90px;
+    padding-top:80px;
     padding-bottom: 200px;
     position: relative; 
 }
@@ -121,6 +118,7 @@ html{
     font-weight: bold;
     font-size: 30px;
     text-align: left;
+    padding-top:20px;
 }
 
 .about-desc{
@@ -130,6 +128,8 @@ html{
 
 img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 #projects {
@@ -190,16 +190,26 @@ a:hover{
     text-decoration: none;
 }
 
-/*PROJECTS*/
-
-.card{
-    height: 350px;
-    border-radius: 3px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
-    background-color:#EADECF;
+.jumbotron{
+    background-color: #F4D7A2;
+    color: black;
+    padding:3rem 3rem;
+    margin-bottom: 20px;
 }
 
-.card .view-proj {
+
+/*PROJECTS*/
+.card{
+    height: 320px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+}
+
+.project-div .desc{
+    padding-top: 20px;
+}
+
+.project-div .card .view-proj {
     opacity: 0%;
     text-transform: uppercase;
     color: white;
@@ -211,9 +221,9 @@ a:hover{
     position: absolute;
 }
 
-.card .more {
-    background-image: url("imgs/right-arrow.svg");
-    opacity:90%;
+.project-div .card .more {
+    background-image: url("../imgs/right-arrow.svg");
+    filter: invert(100%);
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -221,14 +231,12 @@ a:hover{
     width: 40px;
     top: 10px;
     right: 10px;
-    color: #000;
+    color: rgb(0, 0, 0);
     border-radius: 100%;
     position: absolute;
 }
 
-.col-md-6{
-    padding-bottom: 50px;
-}
+
 .card .more:hover ~ span {
     opacity: 0.8;
 }
@@ -256,38 +264,7 @@ a:hover{
 .trio{
     display: block;
     margin: 0 auto;
-    height:auto;
     padding:30px 10px;
-}
-
-.vga{
-    height:300px;
-}
-
-.proj-img{
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    max-width:80%;
-    height: auto ;
-    padding-top: 30px;
-}
-
-.proj-page .proj-title{
-    font-size: 30px;
-    font-weight:500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: black;
-    text-align: center;
-    padding: 10px 10px;
-    padding-top: 70px;
-}
-
-.proj-page .proj-desc{
-    color: black;
-    text-align: center;
-    padding:30px 30px;
 }
 
 /*DARK MODE*/
@@ -304,8 +281,6 @@ body.night .navbar-brand,
 body.night .nav-link:hover,
 body.night .proj-title,
 body.night li,
-body.night .proj-page .proj-title,
-body.night .proj-page .proj-desc,
 body.night .social-media-icons a,
 body.night .about-intro{
     color: white;
@@ -315,7 +290,7 @@ body.night .navbar,
 body.night .toggle,
 body.night #contact,
 body.night .navbar-toggler{
-    background-color: #000;
+    background-color: #000000;
     color:white;
 } 
 
@@ -345,7 +320,6 @@ body.night .underline{
         padding-right: 40px;
         padding-left: 40px;
     }
-
     
     .about-desc{
         text-align: left;
