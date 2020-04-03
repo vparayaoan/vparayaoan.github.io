@@ -90,7 +90,7 @@ html{
 }
 
 .intro{
-    padding-top: 230px;
+    padding-top: 210px;
     padding-right:20px;
     padding-left:100px;
 }
@@ -110,7 +110,6 @@ html{
     display: flex;
     padding:40px;
     padding-top:80px;
-    padding-bottom: 200px;
     position: relative; 
 }
 .about-intro{
@@ -121,9 +120,16 @@ html{
     padding-top:20px;
 }
 
-.about-desc{
+.courses .about-desc{
     text-align: justify;
     align-items: center;
+}
+
+.multi-column{
+    column-count: 2;
+    column-gap: 20px;
+    column-fill: auto;
+    list-style-position: outside;
 }
 
 img {
@@ -143,6 +149,7 @@ img {
     padding-top:150px;
     font-weight: bold;
 }
+
 
 #contact{
     padding-top:100px;
@@ -300,6 +307,10 @@ body.night .social-media-icons a:hover{
 }
 body.night .underline{
     text-decoration-color:#56E9F2;
+}
+
+body.night .jumbotron{
+    background-color: #292929;
 }
 
 

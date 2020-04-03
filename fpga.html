@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -10,24 +9,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Oswald&display=swap" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
-    <link href="animate.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <!-- Custom styles for this template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
     <title>Vanessa Parayaoan</title>
+
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-md fixed-top">
 
         <a class="navbar-brand" href="index.html">Vanessa Parayaoan</a>
 
-        <!-- Dark Mode Switch(Toggle) -->
+        <!-- Dark Mode Toggle -->
         <div class="toggle"></div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
@@ -40,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto mt-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="index.html#about-me">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#projects">Projects</a>
@@ -52,30 +54,29 @@
         </div>
     </nav>
 
-    <section id="projects">
-        <div class="proj-page">
-            <br>
-            <br>
-            <div class="proj-title">FPGA Based Stopwatch</div>
+    <div class="jumbotron">
+        <h3 class="page-title animated fadeInUp">
+            FPGA Based Stopwatch
+        </h3>
+        <p class="proj-skills">Verilog - Xilinx Vivado - FPGA</p>
+    </div>
 
-            <div class="proj-desc animated fadeInUp">
-                Programmed Verilog HDL scripts in Xilinx Vivado to design a FPGA based dual mode stopwatch that can
-                be controlled to count up or down from a pre-set time
-            </div>
-            <div class="row">
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/fpgaRed.png">
-                </div>
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/fpgaGreen.png">
-                </div>
-                <div class="col-md-4 animated fadeInUp">
-                    <img class="trio" src="Images/fpgaBlue.png">
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 animated fadeInUp">
+                <img src="imgs/stopwatch.png">
             </div>
 
+            <div class="my-auto col-sm-12 col-md-6">
+                <p>Programmed Verilog HDL scripts in Xilinx Vivado to design a FPGA based dual mode stopwatch that can
+                    be controlled to count up or down from a pre-set time
+                </p>
+                <p>Enhanced overall functionality of the design by incorporating an animated graphical output onto a
+                    computer monitor using programmed Verilog HDL scripts and a VGA interface</p>
+            </div>
         </div>
-    </section>
+    </div>
+
 
 
     <section id="contact">
@@ -99,16 +100,23 @@
         <br>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="text-center text-muted small">
+                Copyright &copy; Vanessa Parayaoan 2020. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="index.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
