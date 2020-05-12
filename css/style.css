@@ -1,7 +1,7 @@
 body {
     font-family: 'IBM Plex Sans';
     transition: 0.5s;
-    background-color:white; 
+    background-color:white;
 }
 
 html{
@@ -89,10 +89,17 @@ html{
     background: #FDF7F2;
 }
 
+h3{
+    font-size: 28px;
+    padding-bottom:25px;
+    font-weight: bold; 
+}
+
 .intro{
     padding-top: 210px;
     padding-right:20px;
     padding-left:100px;
+    padding-bottom: 90px;
 }
 
 #intro-name{
@@ -108,9 +115,9 @@ html{
 
 .about .container{
     display: flex;
-    padding:40px;
-    padding-top:80px;
-    position: relative; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relaive; 
 }
 .about-intro{
     font-family:"IBM Plex Sans";
@@ -119,6 +126,19 @@ html{
     text-align: left;
     padding-top:20px;
 }
+
+.me{
+    background-image: url("../imgs/me.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center;
+    padding: 100px 100px;
+    transition: 0.4s;
+  }
+
 
 .courses .about-desc{
     text-align: justify;
@@ -142,7 +162,7 @@ img {
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 100px 50px;
 }
 
 .page-title{
@@ -152,11 +172,10 @@ img {
 
 
 #contact{
-    padding-top:100px;
-    padding-bottom: 20px;
+    padding-top:70px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: white;
-    transition: 0.5s;
 }
 
 p{
@@ -176,8 +195,18 @@ p{
     text-transform: uppercase;
     color: white;
     border-radius: 8px;
-    background-color: #456651;
+    background-color: rgb(219, 188, 129);
     box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
+}
+
+.proj-skills{
+    font-size:12px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(219, 188, 129);
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
+    display: inline;
 }
 
 /*SOCIAL MEDIA ICONS*/
@@ -243,6 +272,10 @@ a:hover{
     position: absolute;
 }
 
+.box{
+    background-color:#E0E5EC;
+    box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
+}
 
 .card .more:hover ~ span {
     opacity: 0.8;
@@ -260,9 +293,6 @@ a:hover{
     text-align: left;
 }
 
-.proj-skills{
-    color: #456651;
-}
 
 .proj-info{
     text-align: left;
@@ -271,12 +301,12 @@ a:hover{
 .trio{
     display: block;
     margin: 0 auto;
-    padding:30px 10px;
+    padding:25px 50px;
 }
 
 /*DARK MODE*/
 body.night{
-    background:#121212;
+    background:#303030;
     transition: 0.5s;
 }
 
@@ -293,46 +323,71 @@ body.night .about-intro{
     color: white;
 }
 
+
 body.night .navbar,
 body.night .toggle,
-body.night #contact,
 body.night .navbar-toggler{
     background-color: #000000;
     color:white;
 } 
 
 body.night .social-media-icons a:hover{
-    color:#56E9F2;
-    
-}
-body.night .underline{
-    text-decoration-color:#56E9F2;
+    color:rgb(73, 215, 240);
 }
 
-body.night .jumbotron{
-    background-color: #292929;
+body.night .underline{
+    text-decoration-color:rgb(73, 215, 240) !important;
+}
+
+body.night .me{
+    background-image: url(../imgs/me-dark.svg);
+    transition: 0.4s;
+}
+
+body.night .jumbotron,
+body.night #contact{
+    background-color: transparent;
+}
+
+body.night .btn-link,
+body.night .proj-skills{
+    background-color:rgb(59, 165, 184) ;
 }
 
 
 /* Appearance on smaller screens */
 @media (max-width : 768px) {
-
+ 
     .toggle{
         top: 20px;
         right: 90px;
     }
 
-    h3{
-        font-size: 32px;
-        text-align: center;
-    }
-
     .intro{
-        padding-right: 40px;
-        padding-left: 40px;
+        text-align: center;
+        padding-left:30px;
+        padding-right:30px;
     }
     
-    .about-desc{
-        text-align: left;
+    .online,
+    .about-desc,
+    p{
+        padding-left: 15px;
+        padding-right: 15px;
     }
+
+    .about-intro, .jumbotron{
+        text-align: center;
+    }
+    
+    .courses {
+        padding-top:50%;
+        padding-left: 15px;
+        padding-right: 14px;
+    }
+    .multi-column{
+        column-count: 1;
+        font-size: 14px;
+    }
+
 }
