@@ -183,7 +183,6 @@ p{
 }
   
 .btn-link:hover {
-    width:190px;
     text-decoration: none;
     color:white;
 }
@@ -232,7 +231,6 @@ a:hover{
     padding:3rem 3rem;
     margin-bottom: 20px;
 }
-
 
 /*PROJECTS*/
 .card{
@@ -293,7 +291,6 @@ a:hover{
     text-align: left;
 }
 
-
 .proj-info{
     text-align: left;
 }
@@ -301,7 +298,17 @@ a:hover{
 .trio{
     display: block;
     margin: 0 auto;
-    padding:25px 50px;
+    padding:25px 40px;;
+}
+
+.vga-vid{
+    height: 450px;
+}
+
+figcaption{
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /*DARK MODE*/
@@ -319,7 +326,8 @@ body.night .nav-link:hover,
 body.night .proj-title,
 body.night li,
 body.night .social-media-icons a,
-body.night .about-intro{
+body.night .about-intro,
+body.night a:hover{
     color: white;
 }
 
@@ -363,15 +371,14 @@ body.night .proj-skills{
         right: 90px;
     }
 
-    .intro{
+    .intro, h3{
         text-align: center;
         padding-left:30px;
         padding-right:30px;
     }
     
     .online,
-    .about-desc,
-    p{
+    .about-desc, p{
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -388,6 +395,14 @@ body.night .proj-skills{
     .multi-column{
         column-count: 1;
         font-size: 14px;
+    }
+
+    .me{
+        padding-top: 200px;
+    }
+
+    .about .social-media-icons{
+        text-align: center;
     }
 
 }
