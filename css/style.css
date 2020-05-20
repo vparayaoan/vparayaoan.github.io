@@ -219,6 +219,12 @@ p{
     color:#F4D7A2;
 }
 
+.pic-link{
+    font-size: 10px;
+    padding-top: 0px;
+}
+
+
 a:hover{
     font-weight:bold;
     color: black;
@@ -240,7 +246,7 @@ a:hover{
 }
 
 .project-div .desc{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .project-div .card .view-proj {
@@ -327,7 +333,9 @@ body.night .proj-title,
 body.night li,
 body.night .social-media-icons a,
 body.night .about-intro,
-body.night a:hover{
+body.night a:hover,
+body.night a,
+body.night .pic-link{
     color: white;
 }
 
@@ -362,6 +370,9 @@ body.night .proj-skills{
     background-color:rgb(59, 165, 184) ;
 }
 
+body.night .inverted {
+	filter: invert(100%);
+}
 
 /* Appearance on smaller screens */
 @media (max-width : 768px) {
