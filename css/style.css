@@ -1,6 +1,8 @@
 body {
+    font-family: 'IBM Plex Sans';
     transition: 0.5s;
     background-color:white;
+    font-size: 14px;
 }
 
 html{
@@ -96,7 +98,7 @@ h3{
 
 .intro{
     padding-top: 210px;
-    padding-right:20px;
+    padding-right:350px;
     padding-left:100px;
     padding-bottom: 90px;
 }
@@ -116,7 +118,11 @@ h3{
     display: flex;
     padding-top: 5%;
     padding-bottom: 5%;
-    position: relaive; 
+    margin-bottom: 10%;
+    position: relative; 
+    border-style: solid;
+    border-color: wheat;
+    border-radius: 20px;
 }
 
 .about-intro{
@@ -135,14 +141,13 @@ h3{
     vertical-align: middle;
     background-size: contain;
     background-position: center;
-    padding: 100px 100px;
+    padding: 100px;
     transition: 0.4s;
   }
 
 
-.courses .about-desc{
-    text-align: justify;
-    align-items: center;
+.about-desc{
+    padding-right:20px;
 }
 
 .multi-column{
@@ -170,7 +175,6 @@ img {
     font-weight: bold;
 }
 
-
 #contact{
     padding-top:70px;
     padding-bottom: 50px;
@@ -179,7 +183,7 @@ img {
 }
 
 p{
-    font-size: 16px;
+    font-size: 14px;
 }
   
 .btn-link:hover {
@@ -400,6 +404,14 @@ body.night .inverted {
         padding-right: 15px;
     }
 
+    .about .container{
+        padding-bottom:110px;
+        margin:15px 15px;
+    }
+
+    .container{
+        width: inherit;
+    }
     .about-intro, .jumbotron{
         text-align: center;
     }
