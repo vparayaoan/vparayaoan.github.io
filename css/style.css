@@ -1,5 +1,4 @@
 body {
-    font-family: 'IBM Plex Sans';
     transition: 0.5s;
     background-color:white;
 }
@@ -119,6 +118,7 @@ h3{
     padding-bottom: 5%;
     position: relaive; 
 }
+
 .about-intro{
     font-family:"IBM Plex Sans";
     font-weight: bold;
@@ -299,6 +299,7 @@ a:hover{
 
 .proj-info{
     text-align: left;
+    padding-bottom: 8px;
 }
 
 .trio{
@@ -388,8 +389,13 @@ body.night .inverted {
         padding-right:30px;
     }
     
+    p, li{
+        font-size: 14px;
+    }
     .online,
-    .about-desc, p{
+    .about-desc, 
+    .online p,
+    .courses p, li{
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -397,12 +403,18 @@ body.night .inverted {
     .about-intro, .jumbotron{
         text-align: center;
     }
+
+    .btn-link{
+        width:100px;
+        font-size: 14px;
+    }
     
     .courses {
         padding-top:50%;
         padding-left: 15px;
         padding-right: 14px;
     }
+
     .multi-column{
         column-count: 1;
         font-size: 14px;
@@ -412,8 +424,17 @@ body.night .inverted {
         padding-top: 200px;
     }
 
+    .card{
+        height: inherit;
+    }
+
     .about .social-media-icons{
         text-align: center;
     }
 
+    .project-div .card .more {
+        background-image: none;
+    }
+
 }
+
