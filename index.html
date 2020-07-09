@@ -41,19 +41,19 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md">
 
         <a class="navbar-brand" href="index.html">Vanessa Parayaoan</a>
 
         <!-- Dark Mode Toggle -->
-        <div class="toggle"></div>
+        <!-- <div class="toggle"></div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
                 <i class="fa fa-bars"></i>
             </span>
-        </button>
+        </button> -->
 
         <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto mt-lg-0 ">
@@ -74,25 +74,20 @@
     <section class="intro">
         <div class="flex-container">
             <div class="d-flex flex-column justify-content-left">
-                <h1 id="intro-name" class="animated fadeInUp">Hello! I'm <span class="underline">Vanessa.</span>
-                </h1>
+                <h5 id= "intro-greeting" class="animated fadeInUp">Hi, my name is</h5>
+                <br>
+                <h1 id="intro-name" class="animated fadeInUp"><span class="underline">Vanessa Parayaoan</span></h1>
                 <br>
                 <p>A recent Biomedical & Electrical Engineering graduate from Carleton University interested 
-                    in Computer Vision, Image Processing and Machine Learning domains. </p>
+                    in Computer Vision, Image Processing and Machine Learning domains.</p>
                 <div class="social-media-icons">
                     <br>
                     <a style="margin-left:0;" href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/"
                         target="_blank">
-                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://github.com/vparayaoan" target="_blank">
-                        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="mailto:parayaoanvanessa@gmail.com" target="_blank">
-                        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                    </a></div>
+                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/vparayaoan" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href="mailto:parayaoanvanessa@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </section>
@@ -104,13 +99,13 @@
                 </div>
                 <div class="col-md-6 col-lg-6 my-auto">
                     <div class="about-desc">
-                        <h2 class="about-intro">Hello! I'm <span class="underline">Vanessa Parayaoan.</span></h2>
+                        <h2 class="about-intro"><span class="underline">About Me</span></h2>
                         <br>
                         <p> Through innovation and design, I aspire to push my boundaries of knowledge to create
                             innovative solutions and use engineering to not only create interesting new technologies,
                             but also to create accessible solutions where they are needed most.
                         </p>
-
+                        <br>
                         <div class="social-media-icons">
                             <a style="margin-left:0;" href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/"
                                 target="_blank">
@@ -125,7 +120,132 @@
             </div>
         </div>
     </section>
-     <section class="courses">
+    
+    <!-- Page Content -->
+    <section id="projects">
+        <h3 class="underline">Projects + Work Experiences</h3>
+        
+        <div class="project-div">
+            <div class="row">
+                <div class="col-sm-6 col-md-6" style="padding-top: 50px;">
+                    <a href="mouse.html">
+                        <div style = "background-color:black;" class ="card animated fadeInUp">
+                            <img src="imgs/mouseArrow.gif">
+                        </div>
+                    </a>
+                </div>
+                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
+                    <div class ="proj-num">Featured Project</div>
+                    <br>
+                    <div class="proj-title">
+                        Video Analysis of Mouse Movements for Neuroscience Research
+                    </div>
+                    <br>
+                    <div class = 'desc-title'>
+                        <p class="proj-info">
+                            An automated video position tracker for experiments with stress induced mice made in
+                            collaboration with Carleton University’s Neuroscience Department
+                        </p>
+                        <div class="col-sm-2 col-md-2 proj-skills">Python</div>
+                        <div class="col-sm-2 col-md-2 proj-skills">OpenCV</div>
+                        <div class="col-sm-2 col-md-2 proj-skills">Computer Vision</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-md-6" style="padding-top: 50px;">
+                    <a href="heart.html">
+                        <div style="background-color: black;" class="card animated fadeInUp">
+                            <img src="imgs/pet-imaging-scan.jpg">
+                        </div>
+                    </a>
+                </div>   
+                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
+                    <div class ="proj-num">Featured Project</div>
+                    <br>
+                    <div class="proj-title" style= "margin-left: 50px;">
+                        Myocardial Perfusion and Wall Motion Abnormality Classification
+                    </div>
+                    <br>
+                    <div class = 'desc-title'>
+                        <p class="proj-info">
+                            A deep learning model that can detect the location of cardiac abnormality from PET and 
+                            cardiac wall motion medical imaging
+                        </p>
+                        <div class="col-sm-2 col-md-2 proj-skills">Machine Learning</div>
+                        <div class="col-sm-2 col-md-2 proj-skills">TensorFlow</div>
+                        <div class="col-sm-2 col-md-2 proj-skills">Python</div>
+                    </div>
+                </div>   
+            </div>
+            <br>
+            <br>
+      
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                    <div style="background-color:white;" class="card animated fadeInUp">
+                        <img src="imgs/HRV MATLAB Data.png" >
+                    </div>
+                </div>
+                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
+                    <div class ="proj-num">Featured Project</div>
+                    <br>
+                    <div class="proj-title">Heart Rate Variability Analysis Circuit</div>
+                    <br>
+                    <div class = "desc-title">
+                        <p class="proj-info"> An analog signal acquisition circuit designed to accurately measure a patient’s ECG for research into analyzing the Heart Rate Variability response to music induced stress </p>
+                        <div class="col-sm-2 col-md-2 proj-skills">MATLAB</div>
+                        <div class="col-sm-2 col-md-2 proj-skills">Circuit Design</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="archive">
+        <h3 class="underline text-center">Other Noteworthy Projects</h3>
+        <div class="card-deck m-5">
+            <div class="card animated fadeInUp">
+              <div class="card-body pt-5">
+                <h5 class="card-title">The Effect of Sex on Two-Point Discrimination</h5>
+                <p class="card-text">A research project studying tactile perception differences between males and females as part of the 
+                    2019 Ethics, Research Methods, and Standards for Biomedical Engineers (ERMSBE) Conference</p>
+                <div class="col-sm-2 col-md-2 proj-skills">Research</div>
+                <div class="col-sm-2 col-md-2 proj-skills">Statistical Analysis</div>
+              </div>
+            </div>
+            <div class="card animated fadeInUp">
+              <div class="card-body pt-5">
+                <h5 class="card-title">EMG-Controlled Computer Mouse</h5>
+                <p class="card-text">An electromyogram (EMG) signal-controlled circuit that operates into an active mouse click by flexing the forearm</p>
+                <div class="col-sm-2 col-md-2 proj-skills">Circuit Design</div>
+              </div>
+            </div>
+            <div class="card animated fadeInUp">
+              <div class="card-body pt-5">
+                <h5 class="card-title">FPGA Based Stopwatch</h5>
+                <p class="card-text">An FPGA based dual mode stopwatch that can be controlled to count up or down from a pre-set time</p>
+                <div class="col-sm-2 col-md-2 proj-skills">Verilog</div>
+                <div class="col-sm-2 col-md-2 proj-skills">Xilinx Vivado</div>
+                <div class="col-sm-2 col-md-2 proj-skills">FPGA</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <br>
+        <br>
+        <br>
+    <section class="courses">
         <div class="container"> 
             <h3 class="underline">Skills + Academic Learning</h3>
             <p>Some academic courses I have taken during my undergraduate degree in Biomedical & Electrical Engineering include:</p>
@@ -157,153 +277,15 @@
             </p>
         </div>
     </section>
- 
-
-    <!-- Page Content -->
-    <section id="projects">
-        <h3 class="underline">Projects + Work Experiences </h3>
-        <div class="project-div">
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a href="mouse.html">
-                        <div style = "background-color:black;" class ="card animated fadeInUp">
-                            <div class="more"></div>
-                            <span class="view-proj">view project</span>
-                            <img src="imgs/mouseArrow.gif">
-                        </div>
-                    </a>
-                </div>
-                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
-                    <div class="proj-title">
-                        Video Analysis of Mouse Movements for Neuroscience Research
-                    </div>
-                    <hr>
-                    <p class="proj-info">
-                        An automated video position tracker for experiments with stress induced mice made in
-                        collaboration with Carleton University’s Neuroscience Department
-                    </p>
-                    <div class="col-sm-2 col-md-2 proj-skills">Python</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">OpenCV</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">Computer Vision</div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a href="heart.html">
-                        <div style="background-color: black;" class="card animated fadeInUp">
-                            <div class="more"></div>
-                            <span class="view-proj">view project</span>
-                            <img src="imgs/pet-imaging-scan.jpg">
-                        </div>
-                    </a>
-                </div>
-                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
-                    <div class="proj-title">
-                        Myocardial Perfusion and Wall Motion Abnormality Classification
-                    </div>
-                    <hr>
-                    <p>University of Ottawa Heart Institute</p>
-                    <p class="proj-info">
-                        A deep learning model that can detect the location of cardiac abnormality from PET and 
-                        cardiac wall motion medical imaging
-                    </p>
-                    <div class="col-sm-2 col-md-2 proj-skills">Machine Learning</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">TensorFlow</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">Python</div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a href="emg.html">
-                        <div style="background-color: black;" class="card animated fadeInUp">
-                            <div class="more"></div>
-                            <span class="view-proj">view project</span>
-                            <img src="imgs/emg.png">
-                        </div>
-                    </a>
-                </div>
-                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
-                    <div class="proj-title">
-                        EMG-Controlled Computer Mouse
-                    </div>
-                    <hr>
-                    <p class="proj-info">An electromyogram (EMG) signal-controlled circuit that operates into an active
-                        mouse click by flexing the forearm
-                    </p>
-                    <div class="col-sm-2 col-md-2 proj-skills">Circuit Design</div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-
-                    <div style="background-color:white;" class="card animated fadeInUp">
-                        <img src="imgs/tpd.JPG" >
-                    </div>
-
-                </div>
-                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
-                    <div class="proj-title">
-                        The Effect of Sex on Two-Point Discrimination
-                    </div>
-                    <hr>
-                    <p class="proj-info"> A research project studying tactile perception differences between males and females as part of the 
-                        2019 Ethics, Research Methods, and Standards for Biomedical Engineers(ERMSBE) Conference
-                    </p>
-                    <a class ="btn-link" href="files/The Effect of Sex on Two-Point Discrimination Research Paper.pdf"
-                    role="button" target="_blank">Research Paper</a>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
-                    <a href="fpga.html">
-                        <div style="background-color: black;" class="card animated fadeInUp">
-                            <div class="more"></div>
-                            <span class="view-proj">view project</span>
-                            <img src="imgs/stopwatch.png">
-                        </div>
-                    </a>
-                </div>
-                <div class="desc col-sm-6 col-md-6 animated fadeInUp my-auto">
-                    <div class="proj-title">
-                        FPGA Based Stopwatch
-                    </div>
-                    <hr>
-                    <p class="proj-info">An FPGA based dual mode stopwatch that can be controlled to count up or
-                        down from a pre-set time
-                    </p>
-                    <div class="col-sm-2 col-md-2 proj-skills">Verilog</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">Xilinx Vivado</div>
-                    <div class="col-sm-2 col-md-2 proj-skills">FPGA</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <br> 
 
     <section id="contact">
         <p>Let's Connect!</p>
         <div class="social-media-icons">
-            <a href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/" target="_blank">
-                <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            </a>
-
-            <a href="https://github.com/vparayaoan" target="_blank">
-                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-            </a>
-
-            <a href="mailto:parayaoanvanessa@gmail.com" target="_blank">
-                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-            </a>
-            <div id="background"></div>
+            <a href="https://www.linkedin.com/in/vanessa-parayaoan-291b44163/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i> </a>
+            <a href="https://github.com/vparayaoan" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            <a href="mailto:parayaoanvanessa@gmail.com" target="_blank"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
         </div>
-        <br>
     </section>
 
     <!-- Footer -->

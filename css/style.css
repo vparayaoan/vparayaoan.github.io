@@ -1,8 +1,10 @@
 body {
     font-family: 'IBM Plex Sans';
     transition: 0.5s;
-    background-color:white;
-    font-size: 14px;
+    background-color:#0A192F;
+    font-size: 16px;
+    color:#A8B2D1;
+    border-left:solid #64FFDA 5px;
 }
 
 html{
@@ -20,14 +22,15 @@ html{
 
 /*NAVBAR SETTINGS*/
 .navbar{
-    background-color:white;
+    background-color:#0A192F;
     transition: 0.5s;
     padding:8px 25px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 20px 30px -15px;
 }
 
 .navbar-brand, 
 .nav-link {
-    color:rgb(0, 0, 0);
+    color:#E6F1FF;
     font-size: 18px;
     font-weight:700;
     letter-spacing: 2px;
@@ -35,7 +38,7 @@ html{
 
 .nav-link:hover,
 .navbar-brand:hover{
-   color: #F4D7A2;
+   color: #64FFDA;
 }
 
 .navbar-collapse{
@@ -59,8 +62,8 @@ html{
     position: absolute;
     top: 20px;
     right: 16px;
-    background: rgb(255, 255, 255);
-    border: 2px solid #00151f;
+    background:#0A192F ;
+    border: 2px solid white;
     width: 45px;
     height: 20px;
     cursor: pointer;
@@ -69,7 +72,7 @@ html{
 }
 
 .toggle.active{
-    background: #FDF7F2;
+    background: #0A192F;
     border: 2px solid white;
 }
 
@@ -80,7 +83,7 @@ html{
     left: 1px;
     width: 15px;
     height: 14px;
-    background: black;
+    background: white;
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -94,24 +97,30 @@ h3{
     font-size: 28px;
     padding-bottom:25px;
     font-weight: bold; 
+    color: white;
 }
 
 .intro{
     padding-top: 210px;
-    padding-right:350px;
-    padding-left:100px;
+    padding-right:400px;
     padding-bottom: 90px;
+    padding-left: 100px;    
+}
+
+#intro-greeting{
+    color:#64FFDA;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
 }
 
 #intro-name{
-    color: black;
+    color: #E6F1FF;
     font-family: 'IBM Plex Sans';
     font-weight: bolder;
-    font-size: 60px;
+    font-size: 65px;
 }
 
 .underline{
-    text-decoration: underline #F4D7A2 !important;
+    text-decoration: underline #0A192F !important;
 }
 
 .about .container{
@@ -120,9 +129,8 @@ h3{
     padding-bottom: 5%;
     margin-bottom: 10%;
     position: relative; 
-    border-style: solid;
-    border-color: wheat;
-    border-radius: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .about-intro{
@@ -134,7 +142,7 @@ h3{
 }
 
 .me{
-    background-image: url("../imgs/me.svg");
+    background-image: url("../imgs/me-dark.svg");
     background-repeat: no-repeat;
     display: inline-block;
     width: 100%;
@@ -167,7 +175,8 @@ img {
     display: block;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .page-title{
@@ -179,11 +188,14 @@ img {
     padding-top:70px;
     padding-bottom: 50px;
     text-align: center;
-    background-color: white;
 }
 
 p{
-    font-size: 14px;
+    font-size: 16px;
+}
+
+a{
+    color:#64FFDA;
 }
   
 .btn-link:hover {
@@ -198,29 +210,29 @@ p{
     text-transform: uppercase;
     color: white;
     border-radius: 8px;
-    background-color: rgb(219, 188, 129);
-    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
+    border: solid #64FFDA 1px;
+    
 }
 
 .proj-skills{
     font-size:12px;
     text-align: center;
-    color: white;
+    color: #CCD6F6;
     border-radius: 5px;
-    background-color: rgb(219, 188, 129);
-    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.18);
+    margin: 5px;
+    border: solid #64FFDA 1px;
     display: inline;
 }
 
 /*SOCIAL MEDIA ICONS*/
 .social-media-icons a{
-    color:rgb(0, 0, 0);
+    color:#64FFDA;
     margin: 10px;
     transition: 0.5s;
 }
 
 .social-media-icons a:hover{
-    color:#F4D7A2;
+    color:#E6F1FF;
 }
 
 .pic-link{
@@ -230,54 +242,30 @@ p{
 
 
 a:hover{
-    font-weight:bold;
-    color: black;
+    color: #E6F1FF;
     text-decoration: none;
 }
 
 .jumbotron{
-    background-color: #F4D7A2;
-    color: black;
+    background-color: rgb(23, 42, 69);
+    color:#A8B2D1;
     padding:3rem 3rem;
     margin-bottom: 20px;
 }
 
 /*PROJECTS*/
 .card{
-    height: 320px;
+    height: 380px;
+    width:600px;
     border-radius: 3px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.18);
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 20px 30px -15px;
+    background-color:rgb(23, 42, 69);
 }
 
-.project-div .desc{
-    padding-top: 10px;
-}
-
-.project-div .card .view-proj {
-    opacity: 0%;
-    text-transform: uppercase;
-    color: white;
-    font-size: 10px;
-    letter-spacing: 1px;
-    transition: 0.3s;
-    top: 22px;
-    right: 52px;
-    position: absolute;
-}
-
-.project-div .card .more {
-    background-image: url("../imgs/right-arrow.svg");
-    filter: invert(100%);
-    background-size: 28px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 40px;
-    width: 40px;
-    top: 10px;
-    right: 10px;
-    color: rgb(0, 0, 0);
-    border-radius: 100%;
-    position: absolute;
+.desc-title{
+    background-color: rgb(23, 42, 69);
+    padding: 20px;
+    box-shadow: rgba(2, 12, 27, 0.7) 0px 20px 30px -15px;
 }
 
 .box{
@@ -285,25 +273,26 @@ a:hover{
     box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px  rgba(255,255,255, 0.5);
 }
 
-.card .more:hover ~ span {
-    opacity: 0.8;
-}
-
-.card .more:hover  {
-    background-size: 32px;
-    transition: 0.5s;
-}
-
 .proj-title{
     font-size: 20px;
     font-weight:500;
-    color: black;
-    text-align: left;
+    color: #CCD6F6;
+    text-align: right;
+}
+
+.proj-num{
+    color:#64FFDA;
+    text-align: right;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
 }
 
 .proj-info{
-    text-align: left;
+    text-align:left;
     padding-bottom: 8px;
+}
+
+.desc{
+    padding-top: 50px;
 }
 
 .trio{
@@ -442,10 +431,6 @@ body.night .inverted {
 
     .about .social-media-icons{
         text-align: center;
-    }
-
-    .project-div .card .more {
-        background-image: none;
     }
 
 }
